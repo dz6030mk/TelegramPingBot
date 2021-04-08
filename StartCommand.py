@@ -1,7 +1,6 @@
 from telebot import types
 from speedbot import bot
-
-from Commands.Command import Command
+from Command import Command
 
 
 class StartCommand(Command):
@@ -24,5 +23,5 @@ class StartCommand(Command):
             keyboard.add(no1_btn)
             bot.send_message(call.message.chat.id, 'Может хочешь узнать свой IP?', reply_markup=keyboard)
 
-
-
+    def get_name(self):
+        return 'start'

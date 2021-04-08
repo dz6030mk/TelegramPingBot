@@ -1,7 +1,8 @@
 import telebot
 
-from Commands import Command
-from site_cheker import SiteChecker
+from ChekerCommand import CheckerCommand
+from Command import Command
+from StartCommand import StartCommand
 
 bot = telebot.TeleBot("1632911220:AAFC7admsTyGkpO0bU1N3FW-Br0MPg09q34")
 
@@ -20,6 +21,7 @@ class TelegramBot(bot):
 
 bot = TelegramBot()
 
-bot.register_command(SiteChecker)
+bot.register_command(StartCommand)
+bot.register_command(CheckerCommand)
 
 bot.polling(none_stop=True, interval=0, timeout=0)
