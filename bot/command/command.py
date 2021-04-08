@@ -1,5 +1,5 @@
 class Command:
-    def universe(self, call):
+    def execute(self, call):
         ...
 
     def get_name(self):

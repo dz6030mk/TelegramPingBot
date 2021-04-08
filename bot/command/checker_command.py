@@ -1,11 +1,13 @@
 import requests
-from Command import Command
+
 import json
+
+from bot.command.command import Command
 
 
 class CheckerCommand(Command):
-    def universe(self, call):
-        path = 'data.json'
+    def execute(self, call):
+        path = '../data.json'
         with open(path, 'r') as f:
             dat = json.loads(f.read())
             for i in dat['urls']['url']:
