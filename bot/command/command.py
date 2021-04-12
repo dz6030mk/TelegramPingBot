@@ -1,5 +1,5 @@
 class Command:
-    def execute(self, call):
+    def execute(self, message, bot):
         ...
 
     def get_name(self):

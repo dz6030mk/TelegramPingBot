@@ -1,11 +1,12 @@
 {
-  "urls": {
-
-    "url": [
-      {"first":"https://stackoverflow.com/"
-
-      }
-
-    ]
-  }
+  "resources": [
+    {
+      "url": "192.168.7.77:3011",
+      "name": "hw_converter"
+    },
+    {
+      "url": "192.168.7.77:3011",
+      "name": "hw_converter"
+    }
+  ]
 }
