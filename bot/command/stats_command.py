@@ -10,13 +10,13 @@ class Stats(Command):
         for i in urls:
             r = requests.head(i)
             if r.status_code == 200:
-                # print(1)
+                print(1)
                 bot.send_message(message.chat.id, '' + 'Ну с этим все збс' + i)
 
-
             else:
-                # print(0)
+                print(0)
                 bot.send_message(message.chat.id, '' + 'А этому надо помочь' + i)
 
-    def get_name(self):
-        return 'stats'
+
+def get_name(self):
+    return 'stats'
