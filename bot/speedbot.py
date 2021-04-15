@@ -6,6 +6,8 @@ from telebot.types import Message
 from bot.command.checker_command import CheckerCommand
 from bot.command.command import Command
 from bot.command.start_command import StartCommand
+from bot.command.stats_command import Stats
+
 prefix = '/'
 
 class TelegramBot(AsyncTeleBot):
@@ -30,6 +32,7 @@ bot = TelegramBot("1632911220:AAFC7admsTyGkpO0bU1N3FW-Br0MPg09q34")
 
 bot.register_command(StartCommand())
 bot.register_command(CheckerCommand())
+bot.register_command(Stats())
 
 
 @bot.message_handler(func=lambda m: True)
